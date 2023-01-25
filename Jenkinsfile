@@ -6,6 +6,7 @@ pipeline {
         stage('Say Hello') {
           steps {
             sh 'echo "Hello World!"'
+            archiveArtifacts 'text.txt'
           }
         }
 

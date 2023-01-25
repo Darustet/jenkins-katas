@@ -10,8 +10,9 @@ pipeline {
         }
 
         stage('build app') {
+          agent any
           steps {
-            sh 'sh \'pwd\''
+            sh 'sh \'echo Building\''
           }
         }
 

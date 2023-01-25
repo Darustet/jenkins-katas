@@ -12,7 +12,7 @@ pipeline {
         stage('build app') {
           agent any
           steps {
-            sh 'sh \'echo Building\''
+            sh 'touch text.txt'
           }
         }
 

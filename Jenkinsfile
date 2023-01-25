@@ -20,6 +20,12 @@ pipeline {
       }
     }
 
+    stage('archive') {
+      steps {
+        archiveArtifacts 'text.txt'
+      }
+    }
+
   }
   environment {
     demo = '1'

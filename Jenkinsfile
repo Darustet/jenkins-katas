@@ -14,15 +14,10 @@ pipeline {
           agent any
           steps {
             sh 'touch text.txt'
+            archiveArtifacts 'text.txt'
           }
         }
 
-      }
-    }
-
-    stage('archive') {
-      steps {
-        archiveArtifacts 'text.txt'
       }
     }
 

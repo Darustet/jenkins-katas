@@ -11,7 +11,7 @@ pipeline {
 
         stage('build app') {
           steps {
-            sh 'sh \'echo text.txt\''
+            sh 'sh \'pwd\''
           }
         }
 
